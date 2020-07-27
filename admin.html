@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>cursos y actividades</title>
+	<link rel="icon" type="image/jpg" href="img/logo1.png" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/st1.css" >
+	<script type="text/javascript" src="js/admin.js"></script>
+	
+</head>
+<body class="bg-light">
+	<div id="contenidot">
+				<header>
+					
+					<nav class="navbar navbar-light bg-light">
+					  <a class="navbar-brand" href="admin.html">
+					    <img src="img/logo1.png" width="60" height="60" class="d-inline-block align-top" alt="" loading="lazy">
+					     <span><strong>ACTIVATE</strong>  </span>
+					  </a>
+					  	<ul class="nav justify-content-end">
+					 	<li class="nav-item">
+					    <a  class="nav-link" href="admin.html">ADMINISTRADOR</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="index.html">CERRAR SESION</a>
+					  </li>
+					  
+					</ul>
+					</nav>
+
+				<div class="ralla"></div>
+				</header>
+				<div class="relleno"></div>
+				
+	<div class="con">
+		<div class=" contenido">
+
+		<div class="menu">	
+			
+				<div class="cursos">
+					<div class="titulom"><h1>CURSOS</h1></div>
+					<ul>
+						<li type="button" onclick="mostrar()"><img src="img/icon/cursos.png" height="30px" width="30px"><strong>AJEDREZ</strong> </li>
+						<li type="button" onclick="mostrar2()"><img src="img/icon/cursos.png" height="30px" width="30px"><strong>FUTBOL</strong></li>
+						<li type="button" onclick="mostrar3()"><img src="img/icon/cursos.png" height="30px" width="30px"><strong>EJERCICIO</strong></li>
+						<li type="button" onclick="mostrar4()"><img src="img/icon/cursos.png" height="30px" width="30px"><strong>DIBUJO</strong></li>
+						<li type="button" onclick="mostrar5()"><img src="img/icon/cursos.png" height="30px" width="30px"><strong>COCINA</strong></li>
+						<li type="button" onclick="mostrar6()"><img src="img/icon/cursos.png" height="30px" width="30px"><strong>MANUALIDADES</strong></li>
+						<li type="button" onclick="mostrar7()"><img src="img/icon/cursos.png" height="30px" width="30px"><strong>MUSICA</strong></li>
+						<li type="button" onclick="mostrar8()"><img src="img/icon/cursos.png" height="30px" width="30px"><strong>REPOSTERIA</strong></li>
+						<li type="button" onclick="mostrar9()"><img src="img/icon/cursos.png" height="30px" width="30px"><strong>ARTESANIA</strong></li>
+					</ul>
+			</div>
+		</div>	
+		<div class="datos">
+			<div class="op">
+				<div class="titulop"><h1>Información de la página </h1></div>	
+				<div class="op1"><h3>CURSOS</h3>  <img src="img/icon/cursos.png"><h3>9</h3></div> 
+				<div class="op1"><h3>USUARIOS</h3> <img src="img/icon/user.png"><h3>55</h3></div>
+				<div class="op1"><h3>VISITAS</h3> <img src="img/icon/vista.png"><h3>560</h3></div>
+				<div class="op1"><h3>INSCRIPCIONES</h3> <img src="img/icon/sup.png"><h3>120</h3></div>
+			</div>
+		<div id="oculto">
+			<div class="ops">
+				<div class="titulop2"><h1>AJEDREZ </h1></div>	
+
+				 
+				<div class="op2"><h3>EDAD MINIMA</h3> <h3>12</h3></div>
+				<div class="op2"><h3>VISITAS</h3><h3>25</h3> </div>
+				<div class="op2"><h3>INSCRIPCIONES</h3><h3>11</h3> </div>
+			</div>
+			<div id="niños">
+			<table class="table-hover" style="width: 100%;" border="2" cellpadding="">
+						<tbody>
+				<tr>
+				<td style="background-color: orange;"><strong>NOMBRES</strong> </td>
+				<td style="background-color: orange;"><strong>APELLIDOS</strong></td>
+				<td style="background-color: orange;"><strong>CORREO</strong></td>
+				<td style="background-color: orange;"><strong>EDAD</strong></td>
+				<td style="background-color: orange;"><strong>FECHA</strong></td>
+				<td style="background-color: orange;"><strong>OPCIONES</strong></td>
+				</tr>
+				<tr id="1">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td ><button id="aceptar"  class="btn btn-success" onclick="aceptar()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar()">ELIMINAR</button></td>
+				</tr>
+				<tr id="2">
+				<td>GUAMAN SANCAN</td>
+				<td>MARINA GABRIELA</td>
+				<td>guaman.g@gmail.com</td>
+				<td>15</td>
+				<td>12/04/2020</td>
+				<td><button  id="aceptar2"  class="btn btn-success" onclick="aceptar2()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar2()">ELIMINAR</button></td>
+				</tr>
+				<tr id="3">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar3"  class="btn btn-success" onclick="aceptar3()" >ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar3()">ELIMINAR</button></td>
+				</tr>
+				<tr id="4">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar4"  class="btn btn-success" onclick="aceptar4()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar4()">ELIMINAR</button></td>
+				</tr>
+				<tr id="5">
+				<td>ZAMBRANO ZUARES</td>
+				<td>BORIS DAVI</td>
+				<td>boriszao@gmail.com</td>
+				<td>17</td>
+				<td>15/04/2020</td>
+				<td><button  id="aceptar5"  class="btn btn-success" onclick="aceptar5()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar5()">ELIMINAR</button></td>
+				</tr>
+				<tr id="6">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button id="aceptar6"  class="btn btn-success" onclick="aceptar6()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar6()">ELIMINAR</button>;</td>
+				</tr>
+				<tr id="7">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar7"  class="btn btn-success" onclick="aceptar7()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar7()">ELIMINAR</button></td>
+				</tr>
+				<tr id="8">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar8"  class="btn btn-success" onclick="aceptar8()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar8()">ELIMINAR</button></td>
+				</tr>
+				<tr id="9">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td><button  id="aceptar9"  class="btn btn-success" onclick="aceptar9()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar9()">ELIMINAR</button></td>
+				</tr>
+				<tr id="10">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar10"  class="btn btn-success" onclick="aceptar10()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar10()">ELIMINAR</button></td>
+				</tr>
+				<tr id="11">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button  id="aceptar11"  class="btn btn-success" onclick="aceptar11()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar11()">ELIMINAR</button></td>
+				</tr>
+				</tbody>
+				</table>
+
+
+
+
+
+							
+				</div>
+		</div>
+		<div id="oculto2">
+			<div class="ops">
+				<div class="titulop2"><h1>FUTBOL </h1></div>	
+				<div class="op2"><h3>EDAD MINIMA</h3> <h3>5</h3></div>
+				<div class="op2"><h3>VISITAS</h3><h3>200</h3> </div>
+				<div class="op2"><h3>INSCRIPCIONES</h3><h3>11</h3> </div>
+			</div>
+			<div id="niños">
+			<table class="table-hover" style="width: 100%;" border="2" cellpadding="">
+						<tbody>
+				<tr>
+				<td style="background-color: orange;"><strong>NOMBRES</strong> </td>
+				<td style="background-color: orange;"><strong>APELLIDOS</strong></td>
+				<td style="background-color: orange;"><strong>CORREO</strong></td>
+				<td style="background-color: orange;"><strong>EDAD</strong></td>
+				<td style="background-color: orange;"><strong>FECHA</strong></td>
+				<td style="background-color: orange;"><strong>OPCIONES</strong></td>
+				</tr>
+				<tr id="1.2">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td ><button  id="aceptar12"  class="btn btn-success" onclick="aceptar12()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar12()">ELIMINAR</button></td>
+				</tr>
+				<tr id="2.2">
+				<td>GUAMAN SANCAN</td>
+				<td>MARINA GABRIELA</td>
+				<td>guaman.g@gmail.com</td>
+				<td>15</td>
+				<td>12/04/2020</td>
+				<td><button id="aceptar22"  class="btn btn-success" onclick="aceptar22()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar22()">ELIMINAR</button></td>
+				</tr>
+				<tr id="3.2">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar32"  class="btn btn-success" onclick="aceptar32()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar32()">ELIMINAR</button></td>
+				</tr>
+				<tr id="4.2">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button id="aceptar42"  class="btn btn-success" onclick="aceptar42()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar42()">ELIMINAR</button></td>
+				</tr>
+				<tr id="5.2">
+				<td>ZAMBRANO ZUARES</td>
+				<td>BORIS DAVI</td>
+				<td>boriszao@gmail.com</td>
+				<td>17</td>
+				<td>15/04/2020</td>
+				<td><button  id="aceptar52"  class="btn btn-success" onclick="aceptar52()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar52()">ELIMINAR</button></td>
+				</tr>
+				<tr id="6.2">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button id="aceptar62"  class="btn btn-success" onclick="aceptar62()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar62()">ELIMINAR</button>;</td>
+				</tr>
+				<tr id="7.2">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar72"  class="btn btn-success" onclick="aceptar72()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar72()">ELIMINAR</button></td>
+				</tr>
+				<tr id="8.2">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar82"  class="btn btn-success" onclick="aceptar82()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar82()">ELIMINAR</button></td>
+				</tr>
+				<tr id="9.2">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td><button  id="aceptar92"  class="btn btn-success" onclick="aceptar92()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar92()">ELIMINAR</button></td>
+				</tr>
+				<tr id="10.2">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar102"  class="btn btn-success" onclick="aceptar102()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar102()">ELIMINAR</button></td>
+				</tr>
+				<tr id="11.2">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button  id="aceptar112"  class="btn btn-success" onclick="aceptar112()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar112()">ELIMINAR</button></td>
+				</tr>
+				</tbody>
+				</table>
+
+
+
+
+							
+				</div>
+		</div>
+		<div id="oculto3">
+			<div class="ops">
+				<div class="titulop2"><h1>EJERCICIO </h1></div>	
+
+				 
+				<div class="op2"><h3>EDAD MINIMA</h3> <h3>4</h3></div>
+				<div class="op2"><h3>VISITAS</h3><h3>102</h3> </div>
+				<div class="op2"><h3>INSCRIPCIONES</h3><h3>11</h3> </div>
+			</div>
+			<div id="niños">
+			<table class="table-hover" style="width: 100%;" border="2" cellpadding="">
+						<tbody>
+				<tr>
+				<td style="background-color: orange;"><strong>NOMBRES</strong> </td>
+				<td style="background-color: orange;"><strong>APELLIDOS</strong></td>
+				<td style="background-color: orange;"><strong>CORREO</strong></td>
+				<td style="background-color: orange;"><strong>EDAD</strong></td>
+				<td style="background-color: orange;"><strong>FECHA</strong></td>
+				<td style="background-color: orange;"><strong>OPCIONES</strong></td>
+				</tr>
+				<tr id="1.3">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td ><button  id="aceptar13"  class="btn btn-success" onclick="aceptar13()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar13()">ELIMINAR</button></td>
+				</tr>
+				<tr id="2.3">
+				<td>GUAMAN SANCAN</td>
+				<td>MARINA GABRIELA</td>
+				<td>guaman.g@gmail.com</td>
+				<td>15</td>
+				<td>12/04/2020</td>
+				<td><button  id="aceptar23"  class="btn btn-success" onclick="aceptar23()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar23()">ELIMINAR</button></td>
+				</tr>
+				<tr id="3.3">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar33"  class="btn btn-success" onclick="aceptar33()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar33()">ELIMINAR</button></td>
+				</tr>
+				<tr id="4.3">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar43"  class="btn btn-success" onclick="aceptar43()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar43()">ELIMINAR</button></td>
+				</tr>
+				<tr id="5.3">
+				<td>ZAMBRANO ZUARES</td>
+				<td>BORIS DAVI</td>
+				<td>boriszao@gmail.com</td>
+				<td>17</td>
+				<td>15/04/2020</td>
+				<td><button  id="aceptar53"  class="btn btn-success" onclick="aceptar53()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar53()">ELIMINAR</button></td>
+				</tr>
+				<tr id="6.3">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button  id="aceptar63"  class="btn btn-success" onclick="aceptar63()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar63()">ELIMINAR</button>;</td>
+				</tr>
+				<tr id="7.3">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button id="aceptar73"  class="btn btn-success" onclick="aceptar73()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar73()">ELIMINAR</button></td>
+				</tr>
+				<tr id="8.3">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar83"  class="btn btn-success" onclick="aceptar83()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar83()">ELIMINAR</button></td>
+				</tr>
+				<tr id="9.3">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td><button  id="aceptar93"  class="btn btn-success" onclick="aceptar93()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar93()">ELIMINAR</button></td>
+				</tr>
+				<tr id="10.3">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar103"  class="btn btn-success" onclick="aceptar103()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar103()">ELIMINAR</button></td>
+				</tr>
+				<tr id="11.3">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button  id="aceptar113"  class="btn btn-success" onclick="aceptar113()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar113()">ELIMINAR</button></td>
+				</tr>
+				</tbody>
+				</table>
+
+
+
+
+							
+				</div>
+		</div>
+		<div id="oculto4">
+			<div class="ops">
+				<div class="titulop2"><h1>DIBUJO </h1></div>	
+
+				 
+				<div class="op2"><h3>EDAD MINIMA</h3> <h3>6</h3></div>
+				<div class="op2"><h3>VISITAS</h3><h3>86</h3> </div>
+				<div class="op2"><h3>INSCRIPCIONES</h3><h3>10</h3> </div>
+			</div>
+			<div id="niños">
+			<table class="table-hover" style="width: 100%;" border="2" cellpadding="">
+						<tbody>
+				<tr>
+				<td style="background-color: orange;"><strong>NOMBRES</strong> </td>
+				<td style="background-color: orange;"><strong>APELLIDOS</strong></td>
+				<td style="background-color: orange;"><strong>CORREO</strong></td>
+				<td style="background-color: orange;"><strong>EDAD</strong></td>
+				<td style="background-color: orange;"><strong>FECHA</strong></td>
+				<td style="background-color: orange;"><strong>OPCIONES</strong></td>
+				</tr>
+				<tr id="1.4">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td ><button  id="aceptar14"  class="btn btn-success" onclick="aceptar14()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar14()">ELIMINAR</button></td>
+				</tr>
+				<tr id="2.4">
+				<td>GUAMAN SANCAN</td>
+				<td>MARINA GABRIELA</td>
+				<td>guaman.g@gmail.com</td>
+				<td>15</td>
+				<td>12/04/2020</td>
+				<td><button  id="aceptar24"  class="btn btn-success" onclick="aceptar24()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar24()">ELIMINAR</button></td>
+				</tr>
+				<tr id="3.4">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar34"  class="btn btn-success" onclick="aceptar34()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar34()">ELIMINAR</button></td>
+				</tr>
+				<tr id="4.4">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar44"  class="btn btn-success" onclick="aceptar44()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar44()">ELIMINAR</button></td>
+				</tr>
+				<tr id="5.4">
+				<td>ZAMBRANO ZUARES</td>
+				<td>BORIS DAVI</td>
+				<td>boriszao@gmail.com</td>
+				<td>17</td>
+				<td>15/04/2020</td>
+				<td><button  id="aceptar54"  class="btn btn-success" onclick="aceptar54()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar54()">ELIMINAR</button></td>
+				</tr>
+				<tr id="6.4">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button  id="aceptar64"  class="btn btn-success" onclick="aceptar64()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar64()">ELIMINAR</button>;</td>
+				</tr>
+				<tr id="7.4">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar74"  class="btn btn-success" onclick="aceptar74()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar74()">ELIMINAR</button></td>
+				</tr>
+				<tr id="8.4">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar84"  class="btn btn-success" onclick="aceptar84()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar84()">ELIMINAR</button></td>
+				</tr>
+				<tr id="9.4">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td><button  id="aceptar94"  class="btn btn-success" onclick="aceptar94()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar94()">ELIMINAR</button></td>
+				</tr>
+				<tr id="10.4">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar104"  class="btn btn-success" onclick="aceptar104()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar104()">ELIMINAR</button></td>
+				</tr>
+				
+				</tbody>
+				</table>
+
+
+
+
+
+							
+				</div>
+		</div>
+		<div id="oculto5">
+			<div class="ops">
+				<div class="titulop2"><h1>COCINA</h1></div>	
+
+				 
+				<div class="op2"><h3>EDAD MINIMA</h3> <h3>10</h3></div>
+				<div class="op2"><h3>VISITAS</h3><h3>55</h3> </div>
+				<div class="op2"><h3>INSCRIPCIONES</h3><h3>6</h3> </div>
+			</div>
+			<div id="niños">
+			<table class="table-hover" style="width: 100%;" border="2" cellpadding="">
+						<tbody>
+				<tr>
+				<td style="background-color: orange;"><strong>NOMBRES</strong> </td>
+				<td style="background-color: orange;"><strong>APELLIDOS</strong></td>
+				<td style="background-color: orange;"><strong>CORREO</strong></td>
+				<td style="background-color: orange;"><strong>EDAD</strong></td>
+				<td style="background-color: orange;"><strong>FECHA</strong></td>
+				<td style="background-color: orange;"><strong>OPCIONES</strong></td>
+				</tr>
+				<tr id="1.5">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td ><button  id="aceptar15"  class="btn btn-success" onclick="aceptar15()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar15()">ELIMINAR</button></td>
+				</tr>
+				<tr id="2.5">
+				<td>GUAMAN SANCAN</td>
+				<td>MARINA GABRIELA</td>
+				<td>guaman.g@gmail.com</td>
+				<td>15</td>
+				<td>12/04/2020</td>
+				<td><button  id="aceptar25"  class="btn btn-success" onclick="aceptar25()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar25()">ELIMINAR</button></td>
+				</tr>
+				<tr id="3.5">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar35"  class="btn btn-success" onclick="aceptar35()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar35()">ELIMINAR</button></td>
+				</tr>
+				<tr id="4.5">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar45"  class="btn btn-success" onclick="aceptar45()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar45()">ELIMINAR</button></td>
+				</tr>
+				<tr id="5.5">
+				<td>ZAMBRANO ZUARES</td>
+				<td>BORIS DAVI</td>
+				<td>boriszao@gmail.com</td>
+				<td>17</td>
+				<td>15/04/2020</td>
+				<td><button  id="aceptar55"  class="btn btn-success" onclick="aceptar55()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar55()">ELIMINAR</button></td>
+				</tr>
+				<tr id="6.5">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button  id="aceptar65"  class="btn btn-success" onclick="aceptar65()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar65()">ELIMINAR</button>;</td>
+				</tr>
+			
+				</tbody>
+				</table>
+
+
+
+
+							
+				</div>
+		</div>
+		<div id="oculto6">
+			<div class="ops">
+				<div class="titulop2"><h1>MANUALIDADES </h1></div>	
+
+				 
+				<div class="op2"><h3>EDAD MINIMA</h3> <h3>5</h3></div>
+				<div class="op2"><h3>VISITAS</h3><h3>46</h3> </div>
+				<div class="op2"><h3>INSCRIPCIONES</h3><h3>8</h3> </div>
+			</div>
+			<div id="niños">
+			<table class="table-hover" style="width: 100%;" border="2" cellpadding="">
+						<tbody>
+				<tr>
+				<td style="background-color: orange;"><strong>NOMBRES</strong> </td>
+				<td style="background-color: orange;"><strong>APELLIDOS</strong></td>
+				<td style="background-color: orange;"><strong>CORREO</strong></td>
+				<td style="background-color: orange;"><strong>EDAD</strong></td>
+				<td style="background-color: orange;"><strong>FECHA</strong></td>
+				<td style="background-color: orange;"><strong>OPCIONES</strong></td>
+				</tr>
+				<tr id="1.6">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td ><button  id="aceptar16"  class="btn btn-success" onclick="aceptar16()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar16()">ELIMINAR</button></td>
+				</tr>
+				<tr id="2.6">
+				<td>GUAMAN SANCAN</td>
+				<td>MARINA GABRIELA</td>
+				<td>guaman.g@gmail.com</td>
+				<td>15</td>
+				<td>12/04/2020</td>
+				<td><button  id="aceptar26"  class="btn btn-success" onclick="aceptar26()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar26()">ELIMINAR</button></td>
+				</tr>
+				<tr id="3.6">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar36"  class="btn btn-success" onclick="aceptar36()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar36()">ELIMINAR</button></td>
+				</tr>
+				<tr id="4.6">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar46"  class="btn btn-success" onclick="aceptar46()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar46()">ELIMINAR</button></td>
+				</tr>
+				<tr id="5.6">
+				<td>ZAMBRANO ZUARES</td>
+				<td>BORIS DAVI</td>
+				<td>boriszao@gmail.com</td>
+				<td>17</td>
+				<td>15/04/2020</td>
+				<td><button  id="aceptar56"  class="btn btn-success" onclick="aceptar56()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar56()">ELIMINAR</button></td>
+				</tr>
+				<tr id="6.6">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button  id="aceptar66"  class="btn btn-success" onclick="aceptar66()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar66()">ELIMINAR</button>;</td>
+				</tr>
+				<tr id="7.6">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar76"  class="btn btn-success" onclick="aceptar76()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar76()">ELIMINAR</button></td>
+				</tr>
+				<tr id="8.6">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar86"  class="btn btn-success" onclick="aceptar86()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar86()">ELIMINAR</button></td>
+				</tr>
+			
+				</tbody>
+				</table>
+
+
+
+							
+				</div>
+		</div>
+		<div id="oculto7">
+			<div class="ops">
+				<div class="titulop2"><h1>MUSICA </h1></div>	
+
+				 
+				<div class="op2"><h3>EDAD MINIMA</h3> <h3>9</h3></div>
+				<div class="op2"><h3>VISITAS</h3><h3>200</h3> </div>
+				<div class="op2"><h3>INSCRIPCIONES</h3><h3>11</h3> </div>
+			</div>
+			<div id="niños">
+			<table class="table-hover" style="width: 100%;" border="2" cellpadding="">
+						<tbody>
+				<tr>
+				<td style="background-color: orange;"><strong>NOMBRES</strong> </td>
+				<td style="background-color: orange;"><strong>APELLIDOS</strong></td>
+				<td style="background-color: orange;"><strong>CORREO</strong></td>
+				<td style="background-color: orange;"><strong>EDAD</strong></td>
+				<td style="background-color: orange;"><strong>FECHA</strong></td>
+				<td style="background-color: orange;"><strong>OPCIONES</strong></td>
+				</tr>
+				<tr id="1.7">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td ><button  id="aceptar17"  class="btn btn-success" onclick="aceptar17()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar17()">ELIMINAR</button></td>
+				</tr>
+				<tr id="2.7">
+				<td>GUAMAN SANCAN</td>
+				<td>MARINA GABRIELA</td>
+				<td>guaman.g@gmail.com</td>
+				<td>15</td>
+				<td>12/04/2020</td>
+				<td><button id="aceptar27"  class="btn btn-success" onclick="aceptar27()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar27()">ELIMINAR</button></td>
+				</tr>
+				<tr id="3.7">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar37"  class="btn btn-success" onclick="aceptar37()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar37()">ELIMINAR</button></td>
+				</tr>
+				<tr id="4.7">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar47"  class="btn btn-success" onclick="aceptar47()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar47()">ELIMINAR</button></td>
+				</tr>
+				<tr id="5.7">
+				<td>ZAMBRANO ZUARES</td>
+				<td>BORIS DAVI</td>
+				<td>boriszao@gmail.com</td>
+				<td>17</td>
+				<td>15/04/2020</td>
+				<td><button  id="aceptar57"  class="btn btn-success" onclick="aceptar57()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar57()">ELIMINAR</button></td>
+				</tr>
+				<tr id="6.7">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button  id="aceptar67"  class="btn btn-success" onclick="aceptar67()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar67()">ELIMINAR</button>;</td>
+				</tr>
+				<tr id="7.7">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar77"  class="btn btn-success" onclick="aceptar77()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar77()">ELIMINAR</button></td>
+				</tr>
+				<tr id="8.7">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar87"  class="btn btn-success" onclick="aceptar87()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar87()">ELIMINAR</button></td>
+				</tr>
+				<tr id="9.7">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td><button  id="aceptar97"  class="btn btn-success" onclick="aceptar97()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar97()">ELIMINAR</button></td>
+				</tr>
+				<tr id="10.7">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar107"  class="btn btn-success" onclick="aceptar107()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar107()">ELIMINAR</button></td>
+				</tr>
+				<tr id="11.7">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button  id="aceptar117"  class="btn btn-success" onclick="aceptar117()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar117()">ELIMINAR</button></td>
+				</tr>
+				</tbody>
+				</table>
+
+							
+				</div>
+		</div>
+		<div id="oculto8">
+			<div class="ops">
+				<div class="titulop2"><h1>REPOSTERIA </h1></div>	
+
+				 
+				<div class="op2"><h3>EDAD MINIMA</h3> <h3>7</h3></div>
+				<div class="op2"><h3>VISITAS</h3><h3>86</h3> </div>
+				<div class="op2"><h3>INSCRIPCIONES</h3><h3>10</h3> </div>
+			</div>
+			<div id="niños">
+			<table class="table-hover" style="width: 100%;" border="2" cellpadding="">
+						<tbody>
+				<tr>
+				<td style="background-color: orange;"><strong>NOMBRES</strong> </td>
+				<td style="background-color: orange;"><strong>APELLIDOS</strong></td>
+				<td style="background-color: orange;"><strong>CORREO</strong></td>
+				<td style="background-color: orange;"><strong>EDAD</strong></td>
+				<td style="background-color: orange;"><strong>FECHA</strong></td>
+				<td style="background-color: orange;"><strong>OPCIONES</strong></td>
+				</tr>
+				<tr id="1.8">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td ><button  id="aceptar18"  class="btn btn-success" onclick="aceptar18()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar18()">ELIMINAR</button></td>
+				</tr>
+				<tr id="2.8">
+				<td>GUAMAN SANCAN</td>
+				<td>MARINA GABRIELA</td>
+				<td>guaman.g@gmail.com</td>
+				<td>15</td>
+				<td>12/04/2020</td>
+				<td><button  id="aceptar28"  class="btn btn-success" onclick="aceptar28()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar28()">ELIMINAR</button></td>
+				</tr>
+				<tr id="3.8">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar38"  class="btn btn-success" onclick="aceptar38()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar38()">ELIMINAR</button></td>
+				</tr>
+				<tr id="4.8">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar48"  class="btn btn-success" onclick="aceptar48()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar48()">ELIMINAR</button></td>
+				</tr>
+				<tr id="5.8">
+				<td>ZAMBRANO ZUARES</td>
+				<td>BORIS DAVI</td>
+				<td>boriszao@gmail.com</td>
+				<td>17</td>
+				<td>15/04/2020</td>
+				<td><button  id="aceptar58"  class="btn btn-success" onclick="aceptar58()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar58()">ELIMINAR</button></td>
+				</tr>
+				<tr id="6.8">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button  id="aceptar68"  class="btn btn-success" onclick="aceptar68()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar68()">ELIMINAR</button>;</td>
+				</tr>
+				<tr id="7.8">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar78"  class="btn btn-success" onclick="aceptar78()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar78()">ELIMINAR</button></td>
+				</tr>
+				<tr id="8.8">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button  id="aceptar88"  class="btn btn-success" onclick="aceptar88()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar88()">ELIMINAR</button></td>
+				</tr>
+				<tr id="9.8">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td><button  id="aceptar98"  class="btn btn-success" onclick="aceptar98()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar98()">ELIMINAR</button></td>
+				</tr>
+				<tr id="10.8">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button id="aceptar108"  class="btn btn-success" onclick="aceptar108()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar108()">ELIMINAR</button></td>
+				
+				</tbody>
+				</table>
+
+							
+				</div>
+		</div>
+		<div id="oculto9">
+			<div class="ops">
+				<div class="titulop2"><h1>ARTESANIA </h1></div>	
+
+				 
+				<div class="op2"><h3>EDAD MINIMA</h3> <h3>10</h3></div>
+				<div class="op2"><h3>VISITAS</h3><h3>47</h3> </div>
+				<div class="op2"><h3>INSCRIPCIONES</h3><h3>7</h3> </div>
+			</div>
+			<div id="niños">
+			<table class="table-hover" style="width: 100%;" border="2" cellpadding="">
+						<tbody>
+				<tr>
+				<td style="background-color: orange;"><strong>NOMBRES</strong> </td>
+				<td style="background-color: orange;"><strong>APELLIDOS</strong></td>
+				<td style="background-color: orange;"><strong>CORREO</strong></td>
+				<td style="background-color: orange;"><strong>EDAD</strong></td>
+				<td style="background-color: orange;"><strong>FECHA</strong></td>
+				<td style="background-color: orange;"><strong>OPCIONES</strong></td>
+				</tr>
+				<tr id="1.9">
+				<td>DERIAN ARIEL</td>
+				<td>GARCIA NUÑEZ</td>
+				<td>deriangarcia.g.99@gmail.com</td>
+				<td>18</td>
+				<td>26/07/2020</td>
+				<td ><button  id="aceptar19"  class="btn btn-success" onclick="aceptar19()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar19()">ELIMINAR</button></td>
+				</tr>
+				<tr id="2.9">
+				<td>GUAMAN SANCAN</td>
+				<td>MARINA GABRIELA</td>
+				<td>guaman.g@gmail.com</td>
+				<td>15</td>
+				<td>12/04/2020</td>
+				<td><button   id="aceptar29"  class="btn btn-success" onclick="aceptar29()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar29()">ELIMINAR</button></td>
+				</tr>
+				<tr id="3.9">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button  id="aceptar39"  class="btn btn-success" onclick="aceptar39()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar39()">ELIMINAR</button></td>
+				</tr>
+				<tr id="4.9">
+				<td>SANCHEZ MERO</td>
+				<td>DARIO GREGORIO</td>
+				<td>dariogre@gmail.com</td>
+				<td>18</td>
+				<td>12/05/2020</td>
+				<td><button   id="aceptar49"  class="btn btn-success" onclick="aceptar49()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar49()">ELIMINAR</button></td>
+				</tr>
+				<tr id="5.9">
+				<td>ZAMBRANO ZUARES</td>
+				<td>BORIS DAVI</td>
+				<td>boriszao@gmail.com</td>
+				<td>17</td>
+				<td>15/04/2020</td>
+				<td><button   id="aceptar59"  class="btn btn-success" onclick="aceptar59()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar59()">ELIMINAR</button></td>
+				</tr>
+				<tr id="6.9">
+				<td>ALAVA VERA</td>
+				<td>ANDRES STALIN</td>
+				<td>andresslin@gmail.com</td>
+				<td>8</td>
+				<td>12/06/2020</td>
+				<td><button   id="aceptar69"  class="btn btn-success" onclick="aceptar69()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar69()">ELIMINAR</button>;</td>
+				</tr>
+				<tr id="7.9">
+				<td>VINCES NAVARRETE</td>
+				<td>MELINA DAYANNA</td>
+				<td>melv@gmail.com</td>
+				<td>16</td>
+				<td>25/03/2020</td>
+				<td><button   id="aceptar79"  class="btn btn-success" onclick="aceptar79()">ACEPTAR</button><button  type="button" class="btn btn-danger"  onclick="eliminar79()">ELIMINAR</button></td>
+				</tr>
+			
+				</tbody>
+				</table>
+
+
+
+							
+				</div>
+		</div>
+			<!-- DivTable.com -->
+	</div>
+	</div>
+	
+				
+						
+			
+				<main class="tres">
+						<p>	<strong>Ofrecemos un amplio número de cursos educativos y actividades de desarrollo y formación para jóvenes y niños de distintas edades</strong>	</p>
+				<p></p>
+				<P><strong>Clases interactivas y divertidas, más de 80 actividades entre juegos, canciones e historias.</strong></P>
+				<P><strong>Este servicio no tiene costo y tiene como objetivo organizar grupos de aprendizaje, interacción, actividad y desarrollo para los niños en tiempos de cuarentena</strong></P>
+				<p>	<strong>Empieza un curso con 4 sencillos paso:</strong>  </p>
+						<p>•	Regístra una cuenta</p>
+						<p>•	Inicia sesion</p>
+						<p>•	Selecciona un curso de tu agrado</p>	
+						<p>•	Completa el formulario de registro</p>	
+	</main>	
+	</div>
+</div>
+		 <footer  class="bg-light">
+						<div class="ralla"></div>
+						
+					
+		</footer>
+</div>	
+<script type="text/javascript">
+	document.getElementById('oculto').style.display="none";
+	document.getElementById('oculto2').style.display="none";
+	document.getElementById('oculto3').style.display="none";
+	document.getElementById('oculto4').style.display="none";
+	document.getElementById('oculto5').style.display="none";
+	document.getElementById('oculto6').style.display="none";
+	document.getElementById('oculto7').style.display="none";
+	document.getElementById('oculto8').style.display="none";
+	document.getElementById('oculto9').style.display="none";
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
